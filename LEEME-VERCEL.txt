@@ -1,0 +1,74 @@
+ACADEMIA OASIS PET SPA - VERSION PREPARADA PARA VERCEL
+======================================================
+
+NOTA
+----
+Este paquete se generó a partir del archivo V11 que fue adjuntado en la conversación.
+
+1. DESPLIEGUE DESDE EL PANEL DE VERCEL
+--------------------------------------
+1. Descomprime este ZIP.
+2. Sube la carpeta completa a un repositorio de GitHub, GitLab o Bitbucket.
+3. En Vercel selecciona Add New > Project.
+4. Importa el repositorio.
+5. Framework Preset: Other.
+6. Build Command: dejar vacío.
+7. Output Directory: dejar vacío.
+8. Pulsa Deploy.
+
+También puedes arrastrar la carpeta descomprimida mediante Vercel CLI:
+
+  npm install -g vercel
+  vercel
+  vercel --prod
+
+2. FORMULARIO DE CONTACTO
+-------------------------
+Vercel no ejecuta contact-handler.php. Por eso fue reemplazado por:
+
+  /api/contact.js
+
+La función utiliza Resend para enviar el correo.
+
+En Vercel abre Project Settings > Environment Variables y agrega:
+
+  RESEND_API_KEY
+  CONTACT_TO_EMAIL
+  CONTACT_FROM_EMAIL
+
+Ejemplo:
+
+  RESEND_API_KEY = re_xxxxxxxxxxxxxxxxxxxxx
+  CONTACT_TO_EMAIL = info@academiaoasispetspa.com
+  CONTACT_FROM_EMAIL = Oasis Pet Spa <formularios@academiaoasispetspa.com>
+
+En Resend debes verificar el dominio antes de usar una dirección propia como remitente.
+Para una prueba inicial puedes dejar CONTACT_FROM_EMAIL sin configurar; se usará
+onboarding@resend.dev, sujeto a las restricciones de la cuenta de Resend.
+
+Después de agregar o cambiar variables, vuelve a desplegar el proyecto.
+
+3. DOMINIO PERSONALIZADO
+------------------------
+En Vercel abre Project Settings > Domains y agrega tu dominio.
+Luego configura los registros DNS que Vercel indique.
+
+Los archivos HTML, sitemap.xml y robots.txt actualmente hacen referencia a:
+
+  https://academiaoasispetspa.com
+
+Si utilizarás otro dominio, reemplázalo en esos archivos antes de publicar.
+
+4. ESTRUCTURA PRINCIPAL
+-----------------------
+index.html                 Página principal
+contacto.html              Formulario conectado con /api/contact
+api/contact.js             Función serverless de correo
+vercel.json                Configuración de Vercel y cabeceras
+assets/                    Imágenes y videos
+.env.example               Ejemplo de variables de entorno
+
+5. IMPORTANTE
+-------------
+No subas un archivo .env con claves reales al repositorio. Configura las claves
+exclusivamente desde el panel de Vercel.

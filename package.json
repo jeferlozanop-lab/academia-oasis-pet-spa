@@ -1,0 +1,9 @@
+{
+  "name": "academia-oasis-pet-spa-vercel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estático de Academia Oasis Pet Spa preparado para Vercel",
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320">
+<defs><g id="paw"><ellipse cx="34" cy="47" rx="23" ry="27"/><ellipse cx="9" cy="23" rx="9" ry="12"/><ellipse cx="28" cy="10" rx="9" ry="13"/><ellipse cx="49" cy="12" rx="9" ry="13"/><ellipse cx="65" cy="29" rx="9" ry="12"/></g></defs>
+<g fill="#7653a6" opacity=".17"><use href="#paw" transform="translate(18 24) rotate(-18) scale(.72)"/><use href="#paw" transform="translate(242 20) rotate(22) scale(.48)"/><use href="#paw" transform="translate(140 132) rotate(12) scale(1.05)"/><use href="#paw" transform="translate(18 248) rotate(18) scale(.46)"/><use href="#paw" transform="translate(278 232) rotate(-20) scale(.82)"/></g>
+<g fill="#2ba8c4" opacity=".13"><use href="#paw" transform="translate(108 36) rotate(8) scale(.5)"/><use href="#paw" transform="translate(218 270) rotate(12) scale(.38)"/></g>
+</svg>

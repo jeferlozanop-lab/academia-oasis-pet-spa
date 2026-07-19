@@ -1,0 +1,20 @@
+{
+  "name": "Academia Oasis Pet Spa",
+  "short_name": "Oasis Pet Spa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff9fd",
+  "theme_color": "#6f35b5",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
